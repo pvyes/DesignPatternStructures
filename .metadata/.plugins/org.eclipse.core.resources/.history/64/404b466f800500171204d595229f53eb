@@ -1,0 +1,15 @@
+package textShape;
+
+public abstract class Shape {
+	
+	public Shape() {};
+	
+	public Point[] BoundingBox(Point bottomLeft, Point topRight) {
+		return new Point[2];
+	}
+	
+	public Manipulator createManipulator() {
+		return new Manipulator();
+	}
+
+}

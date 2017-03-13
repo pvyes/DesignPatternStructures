@@ -1,0 +1,7 @@
+package textShape;
+
+public class Point {
+	
+	public Point(Coord bottomLeft, Coord topRight) {};
+
+}

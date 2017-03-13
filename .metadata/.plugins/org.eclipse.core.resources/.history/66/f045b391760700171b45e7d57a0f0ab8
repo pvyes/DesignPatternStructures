@@ -1,0 +1,41 @@
+package textShape;
+
+public class TextShapeDemo {
+
+	public static void main(String[] args) {
+		
+		/*with default coordinates: x = 0, y = 0, height = 2, width = 3 */
+		TextView textview = new TextView(); //or use an existing textview
+		
+		final TextShape textshape = new TextShape(textview);
+		
+		//default values
+		String tvData = "TextView default data:\n";
+		tvData += " x = " + textview.getOrigin()[0];
+		tvData += ", y = " + textview.getOrigin()[1];
+		tvData += ", height = " + textview.getExtent()[0];
+		tvData += ", width = " + textview.getExtent()[1];
+		
+		System.out.println(tvData);
+		
+		Point[] boundingBox = textshape.boundingBox();
+		
+		String tsData = "TextShape data:\n";
+		tsData += " left x = " + boundingBox[0].x;
+		tsData += ", left y = " + boundingBox[0].y;
+		tsData += ", right x = " + boundingBox[1].x;
+		tsData += ", right y = " + boundingBox[1].y;
+		
+		System.out.println(tsData);
+		
+		textshape.setText("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
+		System.out.println("\nunformatted text:");
+		System.out.println(" " +textshape.getText());
+		System.out.println("\nformatted text:");
+		System.out.println(" " + textshape.formatText());
+		
+		
+
+	}
+
+}

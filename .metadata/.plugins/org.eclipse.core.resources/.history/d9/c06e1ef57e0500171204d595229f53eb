@@ -1,0 +1,12 @@
+package textShape;
+
+public class Point {
+	
+	int[] bottomLeft = new int[2], topRight = new int[2];
+	
+	public Point(int[] bottomLeft, int[] topRight) {
+		this.bottomLeft = bottomLeft;
+		this.topRight = topRight;
+	};
+
+}

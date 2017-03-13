@@ -1,0 +1,13 @@
+package textShape;
+
+public abstract class Shape {
+	
+	public Shape() {};
+	
+	public void BoundingBox(int bottomLeft, int topRight) {}
+	
+	public Manipulator createManipulator() {
+		return new Manipulator();
+	}
+
+}

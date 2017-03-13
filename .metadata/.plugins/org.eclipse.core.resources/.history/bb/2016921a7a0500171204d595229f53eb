@@ -1,0 +1,12 @@
+package textShape;
+
+public class TextShapeDemo {
+
+	public static void main(String[] args)  {
+		
+		TextView textview = new TextView();
+		
+
+	}
+
+}

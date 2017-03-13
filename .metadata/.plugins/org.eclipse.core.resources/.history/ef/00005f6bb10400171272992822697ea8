@@ -1,0 +1,5 @@
+package textShape;
+
+public abstract class Shape {
+
+}

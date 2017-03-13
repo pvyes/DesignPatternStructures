@@ -1,0 +1,12 @@
+package squareAdapterNew;
+
+public class NewSquarePeg {
+	private double width;
+	private SquarePegAdapter spq;
+	
+	public NewSquarePeg(double w) {
+		width = w;
+		spq  = new SquarePegAdapter();
+	}
+
+}

@@ -1,0 +1,14 @@
+package textShape;
+
+public class TextView {
+	
+	public TextView() {}
+	
+	public void getOrigin(Coord x, Coord y) {}
+	
+	public void getExtent (Coord width, Coord height) {}
+	
+	public boolean isEmpty() {
+		return false;
+	}
+}

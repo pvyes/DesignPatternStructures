@@ -1,0 +1,27 @@
+package textShape;
+
+public class TextShape extends Shape {
+	
+	private TextView text;
+	
+	TextShape(TextView tw) {
+		text = tw;
+	}
+	
+	@Override
+	public void BoundingBox(Point bottomLeft, Point topRight) {
+		Coord bottom = null, left = null, width, height;
+		
+		text.getOrigin(bottom, left);
+		text.getExtent(width, height);
+		
+		bottomLeft = Point()
+	}
+	
+	public boolean isEmpty() {
+		return text.isEmpty();
+	}
+	
+
+
+}

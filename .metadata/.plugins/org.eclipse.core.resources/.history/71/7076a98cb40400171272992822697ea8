@@ -1,0 +1,26 @@
+package textShape;
+
+public class TextShape extends Shape {
+	
+	private TextView text;
+	
+	TextShape(TextView tw) {
+		text = tw;
+	}
+	
+	@Override
+	public void BoundingBox(int bottomLeft, int topRight) {
+		shrt bottomLeft
+	}
+	
+	@Override
+	public Manipulator createManipulator() {
+		return new Manipulator();
+	}
+	public boolean isEmpty() {
+		return false;
+	}
+	
+
+
+}

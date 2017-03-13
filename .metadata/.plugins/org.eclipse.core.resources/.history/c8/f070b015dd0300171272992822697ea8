@@ -1,0 +1,5 @@
+package mediaplayerAdapter;
+
+public interface AdvancedMediaPlayer {
+
+}

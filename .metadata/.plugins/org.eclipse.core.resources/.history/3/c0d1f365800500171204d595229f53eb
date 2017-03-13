@@ -1,0 +1,43 @@
+package textShape;
+
+/*
+ * Shape assumes a bounding box defined by its opposing corners. In contrast, TextView
+is defined by an origin, height, and width. Shape also defines a CreateManipulator
+operation for creating a Manipulator object, which knows how to animate a shape
+when the user manipulates it.1 TextView has no equivalent operation. The class
+TextShape is an adapter between these different interfaces.
+ */
+
+public class TextShape extends Shape {
+	
+	private TextView textview;
+	
+	/* use an existing textview */ 
+	TextShape(TextView tv) {
+		textview = tv;
+	}
+	
+	@Override
+	public Point[] BoundingBox(Point bottomLeft, Point topRight) {
+		Point[] points = new Point[2];
+		Coord bottom = null, left = null, width, height;
+		
+		bottom = textview.getOrigin()[0];
+		left = textview.getOrigin()[1];
+		width = textview.getExtent()[0];
+		height = textview.getExtent()[1];
+		
+		bottomLeft = new Point(bottom.c, left.c);
+		topRight = new Point(bottom.add(height).c, bottom.add(width).c);
+		points[0] = bottomLeft;
+		points[1] = topRight;
+		return points;
+	}
+	
+	public boolean isEmpty() {
+		return textview.isEmpty();
+	}
+	
+
+
+}
