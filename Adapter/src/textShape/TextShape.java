@@ -14,11 +14,9 @@ TextShape uses points, implemented here as tuples of integers.
 public class TextShape extends Shape {
 	
 	private TextView textview;
-	private String text;
-
 	TextShape() {
 		/*with default coordinates: x = 0, y = 0, height = 2, width = 3 */
-		textview = new TextView(); //or use an existing textview
+		textview = new TextView();
 		//Write textview data to screen
 		String tvData = "TextView default data:\n";
 		tvData += " origin x = " + textview.getOrigin()[0];
@@ -28,7 +26,7 @@ public class TextShape extends Shape {
 		System.out.println(tvData);
 	}
 
-	/* use an existing textview */ 
+	/* use a textview given by the DrawingEditor */ 
 	TextShape(TextView tv) {
 		textview = tv;
 	}
@@ -53,20 +51,4 @@ public class TextShape extends Shape {
 	public boolean isEmpty() {
 		return textview.isEmpty();
 	}
-	
-	//delegate to textview
-	public String formatText() {
-		textview.setText(text);
-		return textview.uppercaseText();
-	}
-	
-	public void setText(String text) {
-		this.text = text;
-	}
-	
-	public String getText() {
-		return text;
-	}
-
-
 }

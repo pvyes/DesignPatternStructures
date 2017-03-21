@@ -45,7 +45,7 @@ public class Circle extends Shape {
      */
     @Override
     public void setLocation(Location location) {
-        this.adaptee.setPostion(new java.awt.Point(location.x, location.y));
+        this.adaptee.setPosition(new java.awt.Point(location.x, location.y));
     }
 
     /**

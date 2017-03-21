@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;textShape.TextShapeDemo&apos; to &apos;DrawingEditor&apos;&#x0D;&#x0A;- Original project: &apos;Adapter&apos;&#x0D;&#x0A;- Original element: &apos;textShape.TextShapeDemo&apos;&#x0D;&#x0A;- Renamed element: &apos;textShape.DrawingEditor&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TextShapeDemo&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;textShape{TextShapeDemo.java[TextShapeDemo" matchStrategy="1" name="DrawingEditor" qualified="false" references="true" similarDeclarations="false" stamp="1490002222729" textual="false" version="1.0"/>
+</session>

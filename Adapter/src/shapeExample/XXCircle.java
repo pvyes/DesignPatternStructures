@@ -45,7 +45,7 @@ public class XXCircle {
      * Set the position of this XXCircle.
      * @param position the new position
      */
-    public void setPostion(java.awt.Point position) {
+    public void setPosition(java.awt.Point position) {
         this.position = position;
     }
 
